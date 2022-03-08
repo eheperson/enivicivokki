@@ -5,12 +5,18 @@
 
 #include "TutorialConfig.h"
 
+#ifdef USE_MYMATH
+  #include "MathFunctions.h"
+#endif
+
 int main(int argc, char* argv[])
 {
   if (argc < 2) {
-    // report version
-    std::cout << argv[0] << " Version " << Tutorial_VERSION_MAJOR << "."
-              << Tutorial_VERSION_MINOR << std::endl;
+    #ifdef USE_MYMATH
+      // report version
+      std::cout << argv[0] << " Version " << Tutorial_VERSION_MAJOR << "."
+                << Tutorial_VERSION_MINOR << std::endl;
+    #endif
     std::cout << "Usage: " << argv[0] << " number" << std::endl;
     return 1;
   }
@@ -19,7 +25,14 @@ int main(int argc, char* argv[])
   const double inputValue = std::stod(argv[1]);
 
   // calculate square root
-  const double outputValue = sqrt(inputValue);
+  #ifdef USE_MYMATH
+    std :: cout << "custom square_root function is used " << std :: endl;
+    const double outputValue = mysqrt(inputValue);
+  #else
+    std :: cout << "default square_root function is used " << std :: endl;
+    const double outputValue = sqrt(inputValue);
+  #endif
+
   std::cout << "The square root of " << inputValue << " is " << outputValue
             << std::endl;
   return 0;
