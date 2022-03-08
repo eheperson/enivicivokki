@@ -87,16 +87,22 @@ echo ""
 #       TEST
 # -----------------------------------
 echo ""
-echo " Install Begin"
+echo " Test Begin"
 echo ""
 #
 cd ${buildDIR}
 ctest -C Debug -VV
 #ctest -C Release -VV
-#
+# -N : will display the list of tests but not actually run them.
 # -C : to specify the configuration type
+#
+#   For more information, check the CMake Documentation or run:
+            # cmake --help-command enable_testing
+            # cmake --help-command add_test
+            # cmake --help-property "<CONFIG>_POSTFIX"
+            # cmake --help-command set_property
 cd ${rootDir}
 #
 echo ""
-echo " Install End "
+echo " Test End "
 echo ""
