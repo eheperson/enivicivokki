@@ -1,8 +1,2 @@
 # cmake-foo
-test repo for cmake
-
-```
-# ./build/Enivicivokki 64
-# ./build/Enivicivokki 144
-
-```
+example repository for the CMake build system based development
