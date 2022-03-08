@@ -1,0 +1,8 @@
+// the configured options and settings for Enivicivokki
+#define Enivicivokki_VERSION_MAJOR @Enivicivokki_VERSION_MAJOR@
+#define Enivicivokki_VERSION_MINOR @Enivicivokki_VERSION_MINOR@
+#define Enivicivokki_VERSION_MINOR @Enivicivokki_VERSION_PATCH@
+
+
+// the source code requires USE_MYMATH
+#cmakedefine USE_MYMATH 

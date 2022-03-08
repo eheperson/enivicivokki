@@ -2,7 +2,7 @@
 test repo for cmake
 
 ```
-# ./build/Tutorial 64
-# ./build/Tutorial 144
+# ./build/Enivicivokki 64
+# ./build/Enivicivokki 144
 
 ```

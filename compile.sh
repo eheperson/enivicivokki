@@ -106,3 +106,22 @@ cd ${rootDir}
 echo ""
 echo " Test End "
 echo ""
+
+
+# -----------------------------------
+#       PACKING
+# -----------------------------------
+echo ""
+echo " PACKING Begin"
+echo ""
+#
+cd ${buildDIR}
+cpack -C Debug
+#
+# To create an archive of the full source tree you would type:
+        # cpack --config CPackSourceConfig.cmake
+cd ${rootDir}
+#
+echo ""
+echo " Test End "
+echo ""

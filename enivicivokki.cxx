@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-#include "TutorialConfig.h"
+#include "EnivicivokkiConfig.h"
 
 #ifdef USE_MYMATH
   #include "MathFunctions.h"
@@ -14,8 +14,8 @@ int main(int argc, char* argv[])
   if (argc < 2) {
     #ifdef USE_MYMATH
       // report version
-      std::cout << argv[0] << " Version " << Tutorial_VERSION_MAJOR << "."
-                << Tutorial_VERSION_MINOR << std::endl;
+      std::cout << argv[0] << " Version " << Enivicivokki_VERSION_MAJOR << "."
+                << Enivicivokki_VERSION_MINOR << std::endl;
     #endif
     std::cout << "Usage: " << argv[0] << " number" << std::endl;
     return 1;
