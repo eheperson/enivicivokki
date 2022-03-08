@@ -82,3 +82,21 @@ cd ${rootDir}
 echo ""
 echo " Install End "
 echo ""
+
+# -----------------------------------
+#       TEST
+# -----------------------------------
+echo ""
+echo " Install Begin"
+echo ""
+#
+cd ${buildDIR}
+ctest -C Debug -VV
+#ctest -C Release -VV
+#
+# -C : to specify the configuration type
+cd ${rootDir}
+#
+echo ""
+echo " Install End "
+echo ""
